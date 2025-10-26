@@ -2,4 +2,10 @@ model_list:
   - model_name: claude-3.7
     litellm_params:
       model: anthropic/claude-3-7-sonnet-20250219
-      api_key: "os.environ/ANTHROPIC_API_KEY"
+      api_key: os.environ/ANTHROPIC_API_KEY
+  - model_name: claude-3.7-bedrock
+    litellm_params:
+      model: bedrock/apac.anthropic.claude-3-7-sonnet-20250219-v1:0
+      aws_access_key_id: os.environ/AWS_ACCESS_KEY_ID
+      aws_secret_access_key: os.environ/AWS_SECRET_ACCESS_KEY
+      aws_region_name: os.environ/AWS_REGION_NAME
